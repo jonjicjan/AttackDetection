@@ -134,4 +134,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
+<<<<<<< HEAD
 For support, email your@email.com or create an issue in the repository. 
+=======
+For support, email codebykhan99@email.com or create an issue in the repository. 
+>>>>>>> 3ce4755561fc1d9d5ee2ac5830c0b88a5c430985
