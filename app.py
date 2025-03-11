@@ -1,18 +1,23 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import pickle
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
-import time
+try:
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import pickle
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import LabelEncoder, StandardScaler
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.naive_bayes import GaussianNB
+    from sklearn.svm import SVC
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+    from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+    import time
+except Exception as e:
+    st.error(f"Error loading dependencies: {str(e)}")
+    st.info("Please check if all required packages are installed correctly.")
+    st.stop()
 
 # Page configuration
 st.set_page_config(
